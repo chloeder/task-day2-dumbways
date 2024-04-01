@@ -4,11 +4,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  height: 100vh;
+}
+
 .container {
   margin: auto;
   width: 50%;
-  padding: 2rem;
-  /* border: 1px solid red; */
+  padding: 5rem;
+  border: 1px solid red;
 }
 
 .about {
@@ -21,6 +25,7 @@
 
 .about p {
   width: 85%;
+  line-height: 1.8;
 }
 
 .contact button {
@@ -37,6 +42,12 @@
   -o-border-radius: 1rem;
 }
 
+.contact button a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
 .contact p {
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
@@ -47,10 +58,16 @@
   color: black;
 }
 
+.contact button:hover {
+  color: rgb(7, 33, 50);
+  background-color: rgb(37, 116, 168);
+}
+
 .social-media {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  margin-left: 3.5rem;
 }
 
 .social-media i {
@@ -69,7 +86,7 @@
 
 .card {
   margin: auto;
-  width: 40%;
+  width: 50%;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   -webkit-border-radius: 10px;
