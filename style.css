@@ -58,6 +58,10 @@ body {
   color: black;
 }
 
+.contact p a:hover {
+  color: rgb(37, 116, 168);
+}
+
 .contact button:hover {
   color: rgb(7, 33, 50);
   background-color: rgb(37, 116, 168);
