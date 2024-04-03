@@ -252,6 +252,23 @@ body {
   gap: 1rem;
 }
 
+.container-form form .form-input-inline {
+  display: flex;
+  gap: 1rem;
+}
+
+.container-form form .form-input-inline label {
+  text-align: start;
+  font-weight: 600;
+}
+
+.container-form form .form-input-inline input {
+  padding: 0.7rem;
+  border-style: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
 .container-form form .form-input label {
   text-align: start;
   font-weight: 600;

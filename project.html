@@ -39,28 +39,27 @@
       <h1>GET IN TOUCH</h1>
       <form action="#">
         <div class="form-input">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required />
+          <label for="project-name">Project Name</label>
+          <input type="text" name="project-name" id="project-name" required />
+        </div>
+        <div class="form-input-inline">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="number" name="phone" id="phone" />
+          </div>
         </div>
         <div class="form-input">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
-        </div>
-        <div class="form-input">
-          <label for="phone">Phone Number</label>
-          <input type="number" name="phone" id="phone" />
-        </div>
-        <div class="form-input">
-          <label for="subject">Subject</label>
-          <select name="subject" id="subject">
-            <option value="" hidden></option>
-            <option value="Website App">Website App</option>
-            <option value="Mobile App">Mobile App</option>
-          </select>
-        </div>
-        <div class="form-input">
-          <label for="message">Your Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <label for="description">Description</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+          ></textarea>
         </div>
         <div class="submit-button">
           <button type="button" onclick="submitHandler()">Submit</button>
