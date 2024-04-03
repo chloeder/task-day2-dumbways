@@ -16,7 +16,7 @@ body {
   align-items: center;
   padding: 0.5rem;
   background-color: rgb(255, 255, 255);
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .navbar .menu {
@@ -31,12 +31,13 @@ body {
 
 .navbar .menu ul {
   display: flex;
+  align-items: center;
   list-style: none;
   margin: 1rem 0 1rem 1rem;
 }
 
 .navbar .menu ul li {
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 .navbar .menu ul li a {
@@ -45,8 +46,13 @@ body {
 }
 
 .navbar .menu ul li a:hover {
-  color: rgb(7, 33, 50);
-  font-weight: bold;
+  color: rgb(37, 116, 168);
+}
+
+.navbar .menu ul li a.active {
+  color: rgb(37, 116, 168);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(37, 116, 168);
 }
 
 .navbar .contact-me {
@@ -291,6 +297,10 @@ body {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+}
+
+.container-form form .submit-button button:hover {
+  background-color: rgb(37, 116, 168);
 }
 
 /* Container Contact Me End */
