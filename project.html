@@ -99,7 +99,14 @@
         </div>
         <div class="form-input">
           <label for="description">Upload Image</label>
-          <input type="file" name="file" id="file" class="custom-file-input" />
+          <input
+            type="file"
+            name="file"
+            id="file"
+            accept="image/*"
+            class="custom-file-input"
+            required
+          />
         </div>
         <div class="submit-button">
           <button type="submit" onclick="addProject(event)">Submit</button>
@@ -109,7 +116,29 @@
     <div class="container-project">
       <h1 class="header-project">My Project</h1>
 
-      <div class="card-project"></div>
+      <div class="card-project">
+        <a href="https://github.com/StewardLumowa">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="blob:http://127.0.0.1:5500/82ac0271-0f65-41c4-a913-08c093e89855"
+              />
+            </div>
+            <div class="card-body">
+              <h1>qweqwe</h1>
+              <p>Duration : 8 Days</p>
+              <p>qweqwe</p>
+              <div class="icon">
+                <i class="fa-brands fa-node-js"></i
+                ><i class="fa-brands fa-react"></i>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Edit</button><button>Delete</button>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
     <script src="/assets/scripts/blog.js"></script>
     <script src="/assets/scripts/main.js"></script>
