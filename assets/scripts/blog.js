@@ -1,5 +1,9 @@
 const dataProject = JSON.parse(sessionStorage.getItem("dataProject")) || [];
 
+window.addEventListener("DOMContentLoaded", () => {
+  listProject();
+});
+
 const addProject = (event) => {
   event.preventDefault();
 
@@ -71,10 +75,6 @@ const addProject = (event) => {
   sessionStorage.setItem("dataProject", JSON.stringify(dataProject));
   listProject();
 };
-
-window.addEventListener("DOMContentLoaded", () => {
-  listProject();
-});
 
 const listProject = () => {
   let projectList = document.querySelector(".card-project");
