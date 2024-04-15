@@ -1,8 +1,7 @@
-const dataProject = JSON.parse(sessionStorage.getItem("dataProject")) || [];
-
 window.addEventListener("DOMContentLoaded", () => {
   listProject();
 });
+const dataProject = JSON.parse(sessionStorage.getItem("dataProject")) || [];
 
 const addProject = (event) => {
   event.preventDefault();
@@ -72,7 +71,9 @@ const addProject = (event) => {
     technologies,
     imgSrc,
   });
+
   sessionStorage.setItem("dataProject", JSON.stringify(dataProject));
+
   listProject();
 };
 
